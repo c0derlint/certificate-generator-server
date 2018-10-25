@@ -1,7 +1,8 @@
 language: python
 python:
   - "3.6"
-  
+env:
+  - SECRET_KEY: "Test key"
 install:
   - pip install -r requirements.txt
   - python manage.py runserver
